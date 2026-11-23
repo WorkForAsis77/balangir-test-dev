@@ -223,7 +223,7 @@ export interface TranslationContent {
 export const TRANSLATIONS: Record<Language, TranslationContent> = {
   en: {
     meta: {
-      siteTitle: "Balangir MIHMS | Maternal & Infant Health Monitoring System",
+      siteTitle: "Balangir | Maternal & Infant Health Monitoring System",
       siteDescription:
         "Official public information portal for Balangir MIHMS — Maternal & Infant Health Monitoring System, District Health Administration, Balangir, Government of Odisha.",
       languageName: "English",
@@ -250,13 +250,13 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       sitemap: "Sitemap",
       openMenu: "Open navigation menu",
       closeMenu: "Close navigation menu",
-      brandName: "Balangir MIHMS",
-      brandSubtitle: "Maternal & Infant Health Monitoring System",
-      departmentLabel: "Department of Health & Family Welfare, Odisha",
+      brandName: "",
+      brandSubtitle: "",
+      departmentLabel: "",
     },
     hero: {
       badge: "District Health Initiative • Balangir, Odisha",
-      title: "Balangir MIHMS",
+      title: "Balangir",
       fullName: "Maternal & Infant Health Monitoring System",
       tagline:
         "Empowering Safe Motherhood and Healthy Beginnings Across Balangir District.",
