@@ -1,26 +1,398 @@
 @import "tailwindcss";
 
+/* ============================================================================
+ * BALANGIR MIHMS — GLOBAL THEME COLORS (SINGLE SOURCE OF TRUTH)
+ * ----------------------------------------------------------------------------
+ * Palette:
+ *   Primary   : #C21868 (Maternal Magenta / Berry Rose)
+ *   Secondary : #E94D91 (Vibrant Soft Rose)
+ *   Tertiary  : #173B70 (Deep Trust Navy)
+ *   Neutral   : #455468 (Slate Charcoal)
+ *
+ * Edit any color below to update it everywhere across the entire website.
+ * ============================================================================ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core Brand Palette */
+  --brand-topbar: #c21868;
+  --brand-accent: #c21868;
+  --brand-accent-light: #e94d91;
+  --brand-accent-dark: #9c1153;
+  --brand-amber: #ffd1e6;
+
+  --brand-primary: #173b70;
+  --brand-primary-deep: #102a52;
+  --brand-primary-dark: #0e2447;
+  --brand-secondary: #244d8a;
+  --brand-secondary-light: #2b5ca6;
+  --brand-secondary-dark: #173b70;
+
+  /* Footer Surface Palette (Design 3: Light Blush + Bold Magenta Bar) */
+  --footer-bg: #fff5f9;
+  --footer-bottom: #c21868;
+
+  /* Section Backgrounds & Surfaces */
+  --surface-base: #ffffff;
+  --surface-hero-start: #fff3f8;
+  --surface-hero-end: #eef4fc;
+  --surface-leadership-top: #fff5f9;
+  --surface-leadership-bottom: #f3f6fc;
+  --surface-warm: #fff7fa;
+  --surface-purpose: #fdf7fb;
+  --surface-muted: #f4f7fc;
+
+  /* Text & Utility Colors */
+  --text-primary: #182230;
+  --text-secondary: #455468;
+  --utility-helpline: #173b70;
+  --utility-helpline-hover: #0e2447;
+
+  /* Purpose & Vision 2x2 Infographic Hub Pastel Cards */
+  --hub-blue-from: #eef4fc;
+  --hub-blue-to: #dce8fa;
+  --hub-blue-border: #93b4e8;
+  --hub-blue-icon-from: #244d8a;
+  --hub-blue-icon-to: #173b70;
+
+  --hub-orange-from: #fff0f6;
+  --hub-orange-to: #ffd9e9;
+  --hub-orange-border: #f49ac0;
+  --hub-orange-icon-from: #e94d91;
+  --hub-orange-icon-to: #c21868;
+
+  --hub-green-from: #ecfdf5;
+  --hub-green-to: #d1fae5;
+  --hub-green-border: #6ee7b7;
+  --hub-green-icon-from: #0d9488;
+  --hub-green-icon-to: #0f766e;
+
+  --hub-pink-from: #f6f0ff;
+  --hub-pink-to: #e9dcff;
+  --hub-pink-border: #c4b5fd;
+  --hub-pink-icon-from: #c21868;
+  --hub-pink-icon-to: #820d43;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Core Brand Tailwind Tokens */
+  --color-brand-topbar: var(--brand-topbar);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-accent-light: var(--brand-accent-light);
+  --color-brand-accent-dark: var(--brand-accent-dark);
+  --color-brand-amber: var(--brand-amber);
+
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-deep: var(--brand-primary-deep);
+  --color-brand-primary-dark: var(--brand-primary-dark);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-secondary-light: var(--brand-secondary-light);
+  --color-brand-secondary-dark: var(--brand-secondary-dark);
+
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-bottom: var(--footer-bottom);
+
+  /* Surface Tokens */
+  --color-surface-base: var(--surface-base);
+  --color-surface-hero-start: var(--surface-hero-start);
+  --color-surface-hero-end: var(--surface-hero-end);
+  --color-surface-leadership-top: var(--surface-leadership-top);
+  --color-surface-leadership-bottom: var(--surface-leadership-bottom);
+  --color-surface-warm: var(--surface-warm);
+  --color-surface-purpose: var(--surface-purpose);
+  --color-surface-muted: var(--surface-muted);
+
+  /* Text & Utility Tokens */
+  --color-ink-primary: var(--text-primary);
+  --color-ink-secondary: var(--text-secondary);
+  --color-helpline: var(--utility-helpline);
+  --color-helpline-hover: var(--utility-helpline-hover);
+
+  /* Purpose & Vision 2x2 Hub Tokens */
+  --color-hub-blue-from: var(--hub-blue-from);
+  --color-hub-blue-to: var(--hub-blue-to);
+  --color-hub-blue-border: var(--hub-blue-border);
+  --color-hub-blue-icon-from: var(--hub-blue-icon-from);
+  --color-hub-blue-icon-to: var(--hub-blue-icon-to);
+
+  --color-hub-orange-from: var(--hub-orange-from);
+  --color-hub-orange-to: var(--hub-orange-to);
+  --color-hub-orange-border: var(--hub-orange-border);
+  --color-hub-orange-icon-from: var(--hub-orange-icon-from);
+  --color-hub-orange-icon-to: var(--hub-orange-icon-to);
+
+  --color-hub-green-from: var(--hub-green-from);
+  --color-hub-green-to: var(--hub-green-to);
+  --color-hub-green-border: var(--hub-green-border);
+  --color-hub-green-icon-from: var(--hub-green-icon-from);
+  --color-hub-green-icon-to: var(--hub-green-icon-to);
+
+  --color-hub-pink-from: var(--hub-pink-from);
+  --color-hub-pink-to: var(--hub-pink-to);
+  --color-hub-pink-border: var(--hub-pink-border);
+  --color-hub-pink-icon-from: var(--hub-pink-icon-from);
+  --color-hub-pink-icon-to: var(--hub-pink-icon-to);
+
+  --font-sans: var(--font-poppins), var(--font-noto-oriya), var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  transition: font-size 0.2s ease;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+  font-family: var(--font-poppins), var(--font-noto-oriya), var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+/* Improved readability and line-height for Odia and Hindi scripts */
+html[lang="or"] body {
+  font-family: var(--font-noto-oriya), var(--font-poppins), system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+html[lang="hi"] body {
+  font-family: var(--font-noto-devanagari), var(--font-poppins), system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+/* Clear, WCAG-compliant keyboard focus indicators */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+/* Offset anchor targets beneath sticky header */
+section[id],
+main[id] {
+  scroll-margin-top: 7.5rem;
+}
+
+/* Uniform wide container across all sections (change width/padding here once) */
+.site-container {
+  width: 100%;
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Signature section heading underline */
+.section-heading-underline::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3.5px;
+  background: linear-gradient(90deg, var(--brand-accent), var(--brand-accent-light));
+  border-radius: 9999px;
+  margin-top: 0.65rem;
+}
+
+.section-heading-underline-center::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3.5px;
+  background: linear-gradient(90deg, var(--brand-accent), var(--brand-accent-light));
+  border-radius: 9999px;
+  margin: 0.65rem auto 0;
+}
+
+@keyframes tagline-word-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes tagline-bar-grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tagline-cursor-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl 32s linear infinite;
+  will-change: transform;
+}
+
+.marquee-container:hover .animate-marquee-rtl,
+.marquee-container:focus-within .animate-marquee-rtl {
+  animation-play-state: paused;
+}
+
+.animate-tagline-word {
+  display: inline-block;
+  opacity: 0;
+  animation: tagline-word-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-tagline-bar {
+  transform-origin: top;
+  animation: tagline-bar-grow 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-tagline-cursor {
+  animation: tagline-cursor-blink 1s step-end infinite;
+}
+
+/* Moving Half-Circle Leadership Dial */
+@keyframes dial-spin-cw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dial-spin-ccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-dial-spin {
+  animation: dial-spin-ccw 36s linear infinite;
+  will-change: transform;
+}
+
+.animate-dial-counter {
+  animation: dial-spin-cw 36s linear infinite;
+  will-change: transform;
+}
+
+.group-dial:hover .animate-dial-spin,
+.group-dial:hover .animate-dial-counter,
+.group-dial:focus-within .animate-dial-spin,
+.group-dial:focus-within .animate-dial-counter,
+.dial-paused .animate-dial-spin,
+.dial-paused .animate-dial-counter {
+  animation-play-state: paused;
+}
+
+/* Vertical Scroll Top-to-Bottom for Leadership Sidebar */
+@keyframes scroll-vertical-ttb {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-scroll-ttb {
+  animation: scroll-vertical-ttb 28s linear infinite;
+  will-change: transform;
+}
+
+.group-leadership:hover .animate-scroll-ttb,
+.group-leadership:focus-within .animate-scroll-ttb,
+.leadership-paused .animate-scroll-ttb {
+  animation-play-state: paused;
+}
+
+/* Play Store 3-Second Pop-Out (Right to Left) */
+@keyframes playstore-pop-left {
+  0%, 75%, 100% {
+    transform: translateX(0);
+  }
+  82% {
+    transform: translateX(-16px);
+  }
+  88% {
+    transform: translateX(-4px);
+  }
+  94% {
+    transform: translateX(-12px);
+  }
+}
+
+.animate-playstore-pop {
+  animation: playstore-pop-left 3s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+  will-change: transform;
+}
+
+.animate-playstore-pop:hover,
+.animate-playstore-pop:focus-visible {
+  animation-play-state: paused;
+  transform: translateX(-18px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    transition: none;
+  }
+  .animate-tagline-word {
+    opacity: 1;
+    animation: none;
+    transform: none;
+    filter: none;
+  }
+  .animate-tagline-bar,
+  .animate-tagline-cursor,
+  .animate-marquee-rtl,
+  .animate-dial-spin,
+  .animate-dial-counter,
+  .animate-scroll-ttb,
+  .animate-playstore-pop {
+    animation: none;
+  }
 }
