@@ -612,7 +612,7 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
 
   or: {
     meta: {
-      siteTitle: "ବଲାଙ୍ଗୀର MIHMS | ମାତୃ ଓ ଶିଶୁ ସ୍ୱାସ୍ଥ୍ୟ ନିରୀକ୍ଷଣ ପ୍ରଣାଳୀ",
+      siteTitle: "ବଲାଙ୍ଗୀର | ମାତୃ ଓ ଶିଶୁ ସ୍ୱାସ୍ଥ୍ୟ ନିରୀକ୍ଷଣ ପ୍ରଣାଳୀ",
       siteDescription:
         "ବଲାଙ୍ଗୀର MIHMS — ମାତୃ ଓ ଶିଶୁ ସ୍ୱାସ୍ଥ୍ୟ ନିରୀକ୍ଷଣ ପ୍ରଣାଳୀ, ଜିଲ୍ଲା ସ୍ୱାସ୍ଥ୍ୟ ପ୍ରଶାସନ, ବଲାଙ୍ଗୀର, ଓଡ଼ିଶା ସରକାରଙ୍କ ସରକାରୀ ସୂଚନା ପୋର୍ଟାଲ୍।",
       languageName: "Odia",
@@ -639,13 +639,13 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       sitemap: "ସାଇଟ୍‌ମ୍ୟାପ୍",
       openMenu: "ମେନୁ ଖୋଲନ୍ତୁ",
       closeMenu: "ମେନୁ ବନ୍ଦ କରନ୍ତୁ",
-      brandName: "ବଲାଙ୍ଗୀର MIHMS",
-      brandSubtitle: "ମାତୃ ଓ ଶିଶୁ ସ୍ୱାସ୍ଥ୍ୟ ନିରୀକ୍ଷଣ ପ୍ରଣାଳୀ",
-      departmentLabel: "ସ୍ୱାସ୍ଥ୍ୟ ଓ ପରିବାର କଲ୍ୟାଣ ବିଭାଗ, ଓଡ଼ିଶା",
+      brandName: "",
+      brandSubtitle: "",
+      departmentLabel: "",
     },
     hero: {
       badge: "ଜିଲ୍ଲା ସ୍ୱାସ୍ଥ୍ୟ ଅଭିଯାନ • ବଲାଙ୍ଗୀର, ଓଡ଼ିଶା",
-      title: "ବଲାଙ୍ଗୀର MIHMS",
+      title: "ବଲାଙ୍ଗୀର",
       fullName: "ମାତୃ ଓ ଶିଶୁ ସ୍ୱାସ୍ଥ୍ୟ ନିରୀକ୍ଷଣ ପ୍ରଣାଳୀ",
       tagline:
         "ବଲାଙ୍ଗୀର ଜିଲ୍ଲାରେ ସୁରକ୍ଷିତ ମାତୃତ୍ୱ ଏବଂ ସୁସ୍ଥ ଶୈଶବର ଆରମ୍ଭକୁ ସଶକ୍ତ କରିବା।",
@@ -999,7 +999,7 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
 
   hi: {
     meta: {
-      siteTitle: "बलांगीर MIHMS | मातृ एवं शिशु स्वास्थ्य निगरानी प्रणाली",
+      siteTitle: "बलांगीर | मातृ एवं शिशु स्वास्थ्य निगरानी प्रणाली",
       siteDescription:
         "बलांगीर MIHMS — मातृ एवं शिशु स्वास्थ्य निगरानी प्रणाली, जिला स्वास्थ्य प्रशासन, बलांगीर, ओडिशा सरकार का आधिकारिक जन सूचना पोर्टल।",
       languageName: "Hindi",
@@ -1026,13 +1026,13 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       sitemap: "साइटमैप",
       openMenu: "मेनू खोलें",
       closeMenu: "मेनू बंद करें",
-      brandName: "बलांगीर MIHMS",
-      brandSubtitle: "मातृ एवं शिशु स्वास्थ्य निगरानी प्रणाली",
-      departmentLabel: "स्वास्थ्य एवं परिवार कल्याण विभाग, ओडिशा",
+      brandName: "",
+      brandSubtitle: "",
+      departmentLabel: "",
     },
     hero: {
       badge: "जिला स्वास्थ्य पहल • बलांगीर, ओडिशा",
-      title: "बलांगीर MIHMS",
+      title: "बलांगीर",
       fullName: "मातृ एवं शिशु स्वास्थ्य निगरानी प्रणाली",
       tagline:
         "बलांगीर जिले में सुरक्षित मातृत्व और स्वस्थ शिशु जीवन की शुरुआत को सशक्त बनाना।",
