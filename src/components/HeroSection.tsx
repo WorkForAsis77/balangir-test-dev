@@ -88,7 +88,7 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] pt-6 pb-8 sm:pt-10 sm:pb-12 lg:pt-10 lg:pb-12 2xl:pt-14 2xl:pb-14">
+      <div className="relative site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] pt-4 pb-8 sm:pt-10 sm:pb-12 lg:pt-8 lg:pb-12 2xl:pt-7 2xl:pb-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-8 2xl:gap-14 3xl:gap-20 items-center">
           {/* Left Content Column */}
           <div className="lg:col-span-5 space-y-5 2xl:space-y-6">
