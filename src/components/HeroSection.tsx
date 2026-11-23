@@ -88,8 +88,8 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] pt-4 pb-8 sm:pt-10 sm:pb-12 lg:pt-8 lg:pb-12 2xl:pt-7 2xl:pb-14">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-8 2xl:gap-14 3xl:gap-20 items-center">
+      <div className="relative site-container 2xl:max-w-none 2xl:px-12 3xl:px-16 pt-4 pb-8 sm:pt-10 sm:pb-12 lg:pt-8 lg:pb-12 2xl:pt-6 2xl:pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-8 2xl:gap-12 3xl:gap-16 items-center">
           {/* Left Content Column */}
           <div className="lg:col-span-5 space-y-5 2xl:space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 2xl:px-4 2xl:py-2 rounded-full bg-brand-accent/12 border border-brand-accent/25 text-brand-topbar text-xs sm:text-sm 2xl:text-base font-semibold">
@@ -182,7 +182,7 @@ export function HeroSection() {
               }}
               className="group relative rounded-2xl 2xl:rounded-3xl overflow-hidden shadow-2xl shadow-brand-primary/15 border-4 2xl:border-5 border-white bg-slate-900"
             >
-              <div className="relative aspect-[16/10] sm:aspect-[16/10] lg:aspect-auto lg:h-[450px] xl:h-[500px] 2xl:h-[580px] 3xl:h-[640px] w-full overflow-hidden">
+              <div className="relative aspect-[16/10] sm:aspect-[16/10] lg:aspect-auto lg:h-[450px] xl:h-[500px] 2xl:h-[540px] 3xl:h-[600px] w-full overflow-hidden">
                 {HERO_SLIDE_IMAGES.map((src, idx) => {
                   const isActive = idx === activeSlide;
                   const slideMeta = t.hero.slides[idx] ?? t.hero.slides[0];
@@ -317,7 +317,7 @@ export function HeroSection() {
 
       {/* District Highlights Ribbon */}
       <div className="bg-gradient-to-r from-brand-primary-dark via-brand-primary to-brand-secondary text-white border-t border-white/10">
-        <div className="site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] py-5 2xl:py-7">
+        <div className="site-container 2xl:max-w-none 2xl:px-12 3xl:px-16 py-5 2xl:py-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 2xl:gap-8">
             {t.hero.highlights.map((item, idx) => (
               <div

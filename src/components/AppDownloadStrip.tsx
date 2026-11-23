@@ -24,7 +24,7 @@ export function AppDownloadStrip() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#334c67]/95 via-[#405d7b]/45 to-[#334c67]/95 pointer-events-none" />
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 sm:py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-6">
+      <div className="relative z-10 max-w-7xl 2xl:max-w-none 2xl:px-12 3xl:px-16 mx-auto px-4 sm:px-6 lg:px-8 py-3.5 sm:py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-6">
         {/* Left Column: Heading and Subtitle */}
         <div className="flex flex-col gap-1 min-w-0">
           <h2 className="text-white text-base sm:text-lg font-bold tracking-wide leading-tight drop-shadow-xs">
