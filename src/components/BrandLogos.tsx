@@ -55,6 +55,7 @@ export function GooglePlayBadge({ className = "w-36 h-auto" }: { className?: str
       height={53}
       className={`${className} object-contain`}
     />
+    
   );
 }
 
