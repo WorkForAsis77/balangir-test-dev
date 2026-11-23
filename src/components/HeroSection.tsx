@@ -88,7 +88,7 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative site-container 2xl:max-w-none 2xl:px-12 3xl:px-16 pt-4 pb-8 sm:pt-10 sm:pb-12 lg:pt-8 lg:pb-12 2xl:pt-6 2xl:pb-10">
+      <div className="relative site-container home-large-bleed pt-4 pb-8 sm:pt-10 sm:pb-12 lg:pt-8 lg:pb-12 2xl:pt-6 2xl:pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-8 2xl:gap-12 3xl:gap-16 items-center">
           {/* Left Content Column */}
           <div className="lg:col-span-5 space-y-5 2xl:space-y-6">
@@ -144,7 +144,7 @@ export function HeroSection() {
               </p>
             </div>
 
-            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-slate-600 leading-relaxed 2xl:leading-relaxed max-w-2xl 2xl:max-w-3xl">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-slate-600 leading-relaxed 2xl:leading-relaxed max-w-2xl 2xl:max-w-4xl">
               {t.hero.intro}
             </p>
 
@@ -317,7 +317,7 @@ export function HeroSection() {
 
       {/* District Highlights Ribbon */}
       <div className="bg-gradient-to-r from-brand-primary-dark via-brand-primary to-brand-secondary text-white border-t border-white/10">
-        <div className="site-container 2xl:max-w-none 2xl:px-12 3xl:px-16 py-5 2xl:py-6">
+        <div className="site-container home-large-bleed py-5 2xl:py-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 2xl:gap-8">
             {t.hero.highlights.map((item, idx) => (
               <div
