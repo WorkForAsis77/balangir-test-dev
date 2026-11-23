@@ -144,7 +144,7 @@ export function TopBar() {
 
   return (
     <div className="bg-brand-topbar text-white text-xs sm:text-[13px] shadow-xs">
-      <div className="site-container py-1.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-3">
+      <div className="site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] py-1.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-3">
         {/* Left: Government of Odisha identity + Live Date/Time */}
         <div className="flex items-center justify-between sm:justify-start flex-wrap gap-x-2.5 gap-y-1 min-w-0">
           <div className="flex items-center gap-2 min-w-0">

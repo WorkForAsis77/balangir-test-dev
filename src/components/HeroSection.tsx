@@ -88,38 +88,38 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative site-container pt-6 pb-8 sm:pt-10 sm:pb-12 lg:pt-10 lg:pb-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-8 items-center">
+      <div className="relative site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] pt-6 pb-8 sm:pt-10 sm:pb-12 lg:pt-10 lg:pb-12 2xl:pt-14 2xl:pb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-8 2xl:gap-14 3xl:gap-20 items-center">
           {/* Left Content Column */}
-          <div className="lg:col-span-5 space-y-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-accent/12 border border-brand-accent/25 text-brand-topbar text-xs sm:text-sm font-semibold">
-              <ShieldCheck className="w-4 h-4 shrink-0" aria-hidden="true" />
+          <div className="lg:col-span-5 space-y-5 2xl:space-y-6">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 2xl:px-4 2xl:py-2 rounded-full bg-brand-accent/12 border border-brand-accent/25 text-brand-topbar text-xs sm:text-sm 2xl:text-base font-semibold">
+              <ShieldCheck className="w-4 h-4 2xl:w-5 2xl:h-5 shrink-0" aria-hidden="true" />
               <span>{t.hero.badge}</span>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-2 2xl:space-y-3">
               <h1
                 id="hero-heading"
-                className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-primary tracking-tight leading-[1.18]"
+                className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-extrabold text-brand-primary tracking-tight leading-[1.15]"
               >
                 {t.hero.title}
               </h1>
-              <p className="text-base sm:text-lg font-bold text-brand-accent">
+              <p className="text-base sm:text-lg 2xl:text-2xl font-bold text-brand-accent">
                 {t.hero.fullName}
               </p>
             </div>
 
-            <div className="relative pl-4 py-1" aria-label={t.hero.tagline}>
+            <div className="relative pl-4 2xl:pl-5 py-1" aria-label={t.hero.tagline}>
               <span
                 key={`bar-${language}-${taglineCycle}`}
-                className="animate-tagline-bar absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-brand-accent to-brand-topbar"
+                className="animate-tagline-bar absolute left-0 top-0 bottom-0 w-1 2xl:w-1.5 rounded-full bg-gradient-to-b from-brand-accent to-brand-topbar"
                 aria-hidden="true"
               />
               <span className="sr-only">{t.hero.tagline}</span>
               <p
                 key={`tagline-${language}-${taglineCycle}`}
                 aria-hidden="true"
-                className="text-lg sm:text-xl font-semibold text-slate-800 leading-snug"
+                className="text-lg sm:text-xl 2xl:text-2xl 3xl:text-3xl font-semibold text-slate-800 leading-snug"
               >
                 {taglineWords.map((word, idx) => {
                   const isLast = idx === taglineWords.length - 1;
@@ -132,7 +132,7 @@ export function HeroSection() {
                         {word}
                         {isLast && (
                           <span
-                            className="animate-tagline-cursor inline-block w-0.5 h-5 align-middle ml-1.5 rounded-full bg-brand-accent"
+                            className="animate-tagline-cursor inline-block w-0.5 2xl:w-1 h-5 2xl:h-7 align-middle ml-1.5 rounded-full bg-brand-accent"
                             aria-hidden="true"
                           />
                         )}
@@ -144,23 +144,23 @@ export function HeroSection() {
               </p>
             </div>
 
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-sm sm:text-base 2xl:text-lg 3xl:text-xl text-slate-600 leading-relaxed 2xl:leading-relaxed max-w-2xl 2xl:max-w-3xl">
               {t.hero.intro}
             </p>
 
-            <div className="flex flex-wrap items-center gap-3.5 pt-2">
+            <div className="flex flex-wrap items-center gap-3.5 2xl:gap-5 pt-2">
               <Link
                 href="#about"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accent-dark text-white font-semibold text-sm sm:text-base shadow-md shadow-brand-accent/25 hover:shadow-lg hover:brightness-105 transition"
+                className="inline-flex items-center gap-2 px-6 py-3 2xl:px-8 2xl:py-3.5 rounded-xl bg-gradient-to-r from-brand-accent to-brand-accent-dark text-white font-semibold text-sm sm:text-base 2xl:text-lg shadow-md shadow-brand-accent/25 hover:shadow-lg hover:brightness-105 transition"
               >
                 <span>{t.hero.primaryCta}</span>
-                <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />
+                <ArrowRight className="w-4 h-4 2xl:w-5 2xl:h-5 shrink-0" aria-hidden="true" />
               </Link>
               <Link
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-brand-primary border-2 border-brand-primary/25 hover:border-brand-primary hover:bg-brand-primary hover:text-white font-semibold text-sm sm:text-base transition"
+                className="inline-flex items-center gap-2 px-6 py-3 2xl:px-8 2xl:py-3.5 rounded-xl bg-white text-brand-primary border-2 border-brand-primary/25 hover:border-brand-primary hover:bg-brand-primary hover:text-white font-semibold text-sm sm:text-base 2xl:text-lg transition"
               >
-                <PhoneCall className="w-4 h-4 shrink-0" aria-hidden="true" />
+                <PhoneCall className="w-4 h-4 2xl:w-5 2xl:h-5 shrink-0" aria-hidden="true" />
                 <span>{t.hero.secondaryCta}</span>
               </Link>
             </div>
@@ -180,9 +180,9 @@ export function HeroSection() {
                   setIsHovered(false);
                 }
               }}
-              className="group relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-primary/15 border-4 border-white bg-slate-900"
+              className="group relative rounded-2xl 2xl:rounded-3xl overflow-hidden shadow-2xl shadow-brand-primary/15 border-4 2xl:border-5 border-white bg-slate-900"
             >
-              <div className="relative aspect-[16/10] sm:aspect-[16/10] lg:aspect-auto lg:h-[450px] xl:h-[500px] w-full overflow-hidden">
+              <div className="relative aspect-[16/10] sm:aspect-[16/10] lg:aspect-auto lg:h-[450px] xl:h-[500px] 2xl:h-[580px] 3xl:h-[640px] w-full overflow-hidden">
                 {HERO_SLIDE_IMAGES.map((src, idx) => {
                   const isActive = idx === activeSlide;
                   const slideMeta = t.hero.slides[idx] ?? t.hero.slides[0];
@@ -317,17 +317,17 @@ export function HeroSection() {
 
       {/* District Highlights Ribbon */}
       <div className="bg-gradient-to-r from-brand-primary-dark via-brand-primary to-brand-secondary text-white border-t border-white/10">
-        <div className="site-container py-5">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px] py-5 2xl:py-7">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 2xl:gap-8">
             {t.hero.highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center lg:items-start text-center lg:text-left px-3 py-1.5 rounded-lg bg-white/5 border border-white/10"
+                className="flex flex-col items-center lg:items-start text-center lg:text-left px-3 py-1.5 2xl:px-5 2xl:py-3 rounded-lg bg-white/5 border border-white/10"
               >
-                <span className="text-lg sm:text-xl font-extrabold text-brand-amber">
+                <span className="text-lg sm:text-xl 2xl:text-3xl font-extrabold text-brand-amber">
                   {item.value}
                 </span>
-                <span className="text-xs sm:text-sm text-white/90 font-medium">
+                <span className="text-xs sm:text-sm 2xl:text-base text-white/90 font-medium mt-0.5">
                   {item.label}
                 </span>
               </div>

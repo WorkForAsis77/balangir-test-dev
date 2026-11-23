@@ -83,7 +83,7 @@ export function Header() {
           scrolled ? "shadow-md" : "shadow-xs"
         }`}
       >
-        <div className="site-container">
+        <div className="site-container 2xl:max-w-[1800px] 3xl:max-w-[2100px]">
           <div className="flex items-center justify-between gap-3 py-2.5 sm:py-3">
             {/* Approved Programme & Department Logo Area */}
             <Link

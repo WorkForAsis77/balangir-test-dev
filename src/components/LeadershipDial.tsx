@@ -17,7 +17,7 @@ export function LeadershipDial() {
     <>
       <aside
         aria-label={t.leadership.title}
-        className={`group-leadership pointer-events-none absolute left-2 sm:left-3.5 top-2.5 sm:top-3.5 bottom-2.5 sm:bottom-3.5 z-25 hidden md:flex flex-col w-[165px] xs:w-[178px] sm:w-[200px] md:w-[215px] ${
+        className={`group-leadership pointer-events-none absolute left-2 sm:left-3.5 2xl:left-5 top-2.5 sm:top-3.5 2xl:top-5 bottom-2.5 sm:bottom-3.5 2xl:bottom-5 z-25 hidden md:flex flex-col w-[165px] xs:w-[178px] sm:w-[200px] md:w-[215px] 2xl:w-[245px] ${
           isPaused ? "leadership-paused" : ""
         }`}
       >
